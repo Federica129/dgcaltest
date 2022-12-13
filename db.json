@@ -2,13 +2,13 @@
   "wine": [
     {
       "id": 1,
-      "title": "VALDO - Valdobbiadene Prosecco Superiore D.O.C.G.Extra Dry",
+      "title": "VALDO - Valdobbiadene Prosecco Superiore D.O.C.G.Extra",
       "name": "Prosecco",
       "photo": "http://cdn.shopify.com/s/files/1/0551/0705/9896/products/marca_oro_01_1200x1200.jpg?v=1666564791",
       "price": "€10,00",
       "comments": [{ "id": 1, "body": "Vino brutto" }],
       "reviews": [
-        { "id": 1, "efferv": "4", "color": "2", "olfatto": "4", "ep": "5" }
+        { "id": 1, "efferv": "4", "color": "2", "olfatto": "4", "ep": "7" }
       ]
     },
     {
