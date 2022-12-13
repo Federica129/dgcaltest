@@ -1,9 +1,9 @@
 import styles from "./index.module.scss";
 
 const Card = ({ info }) => {
-  const { title, name, photo, price } = info[0];
-  const { rate, olfatto, color, ep, efferv } = info[0].reviews[0];
-  const { body } = info[0]?.comments[0];
+  const { title, name, photo, price } = info;
+  const { rate, olfatto, color, ep, efferv } = info.reviews[0];
+  const { body } = info?.comments[0];
 
   return (
     <>
@@ -15,7 +15,7 @@ const Card = ({ info }) => {
           ></div>
           <div className={styles.info}>
             <div className={styles.title}>
-              <h1>{title}</h1>
+              <h2>{title}</h2>
               <div className={styles.info2}>
                 <p>{name}</p>
                 <p>
@@ -25,7 +25,7 @@ const Card = ({ info }) => {
               </div>
             </div>
             <div className={styles.price}>
-              <h1>Prezzo</h1>
+              <h2>Prezzo</h2>
               <p>{price}</p>
             </div>
             <div className={styles.addBtn}>
@@ -34,7 +34,7 @@ const Card = ({ info }) => {
           </div>
         </div>
         <div className={styles.review}>
-          <h1>Recensioni</h1>
+          <h2>Recensioni</h2>
           <div>
             <p>Olfatto:</p>
             <p>{olfatto}/10</p>

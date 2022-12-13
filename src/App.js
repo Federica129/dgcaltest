@@ -3,13 +3,13 @@ import Card from "./components/card";
 import { useEffect, useState, useCallback } from "react";
 
 function App() {
-  const [info, setInfo] = useState([]);
+  const [info, setInfo] = useState({});
   const [id, setId] = useState(1);
 
   useEffect(() => {
     fetch(`http://localhost:3000/wine/${id}`)
       .then((res) => res.json())
-      .then((wine) => setInfo([wine]));
+      .then((wine) => setInfo(wine));
   }, [id]);
 
   const Next = useCallback(() => {
@@ -24,7 +24,7 @@ function App() {
     <div className={styles.App}>
       <h1>Test DGCAL</h1>
       <div>
-        {info.length > 0 && <Card info={info} />}
+        {info?.comments && <Card info={info} />}
         <div className={styles.btn}>
           <button onClick={() => Prev()} disabled={id === 1}>
             {"<"}
