@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  .btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 21px;
+
+    button {
+      background-color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 30px;
+      font-weight: bolder;
+      cursor: pointer;
+
+      &:disabled {
+        cursor: auto;
+        background-color: rgba(255, 255, 255, 0.461);
+      }
+
+      &:hover {
+        background-color: rgb(216, 216, 216);
+
+        &:disabled {
+          background-color: rgba(255, 255, 255, 0.461);
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

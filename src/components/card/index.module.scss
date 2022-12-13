@@ -1,0 +1,118 @@
+.bg {
+  background-image: url("https://media.istockphoto.com/id/1301017778/photo/three-glasses-of-white-rose-and-red-wine-on-a-wooden-barrel.jpg?b=1&s=170667a&w=0&k=20&c=hGN_yhhnS1BbLz4IoSaX0sx0RBbCJzskgaad6dyFkko=");
+  background-position: center;
+  background-size: cover;
+  filter: blur(3px) brightness(0.75);
+  width: 550px;
+  height: 210px;
+  padding: 25px;
+  position: absolute;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.Card {
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.398);
+  color: white;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  width: 550px;
+  height: 210px;
+  padding: 25px;
+  border-radius: 30px;
+  z-index: 5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.756);
+
+  .photo {
+    width: 100px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px 1px rgb(0 0 0 / 29%);
+  }
+
+  .info {
+    text-align: left;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .price {
+      align-self: center;
+      text-align: center;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .addBtn {
+      align-self: center;
+
+      button {
+        cursor: pointer;
+        width: 200px;
+        height: 35px;
+        background: rgb(150, 49, 13);
+        background: linear-gradient(
+          0deg,
+          rgba(150, 49, 13, 1) 0%,
+          rgba(188, 125, 62, 1) 74%
+        );
+        border: none;
+        color: white;
+        font-weight: 600;
+        box-shadow: inset 0 0 2px 1px rgb(0 0 0 / 29%);
+        &:hover {
+          background: rgb(153, 59, 24);
+          background: linear-gradient(
+            0deg,
+            rgb(153, 59, 24) 0%,
+            rgb(188, 128, 68) 74%
+          );
+        }
+      }
+    }
+
+    h1 {
+      margin: 5px 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 350;
+    }
+  }
+
+  .review {
+    width: 160px;
+    border-left: rgba(255, 255, 255, 0.711) 1px solid;
+    padding-left: 10px;
+
+    h1 {
+      margin: 5px 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 350;
+      text-align: left;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding: 1px 0;
+    }
+  }
+}
