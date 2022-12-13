@@ -1,5 +1,4 @@
 import styles from "./App.module.scss";
-
 import Card from "./components/card";
 import { useEffect, useState, useCallback } from "react";
 
@@ -12,7 +11,6 @@ function App() {
       .then((res) => res.json())
       .then((wine) => setInfo([wine]));
   }, [id]);
-  console.log(info);
 
   const Next = useCallback(() => {
     setId(id + 1);

@@ -3,23 +3,30 @@ import styles from "./index.module.scss";
 const Card = ({ info }) => {
   return (
     <>
-      <div className={styles.bg}></div>
-      <div className={styles.Card}>
-        <div
-          className={styles.photo}
-          style={{ backgroundImage: `url(${info[0]?.photo})` }}
-        ></div>
-        <div className={styles.info}>
-          <div className={styles.title}>
-            <h1>{info[0]?.title}</h1>
-            <p>{info[0]?.name}</p>
-          </div>
-          <div className={styles.price}>
-            <h1>Prezzo</h1>
-            <p>{info[0]?.price}</p>
-          </div>
-          <div className={styles.addBtn}>
-            <button>Aggiungi</button>
+      <div className={styles.bg}>
+        <div className={styles.Card}>
+          <div
+            className={styles.photo}
+            style={{ backgroundImage: `url(${info[0]?.photo})` }}
+          ></div>
+          <div className={styles.info}>
+            <div className={styles.title}>
+              <h1>{info[0]?.title}</h1>
+              <div className={styles.info2}>
+                <p>{info[0]?.name}</p>{" "}
+                <p>
+                  <span>Voto </span>
+                  {info[0]?.reviews[0]?.rate}/10
+                </p>
+              </div>
+            </div>
+            <div className={styles.price}>
+              <h1>Prezzo</h1>
+              <p>{info[0]?.price}</p>
+            </div>
+            <div className={styles.addBtn}>
+              <button>Aggiungi</button>
+            </div>
           </div>
         </div>
         <div className={styles.review}>

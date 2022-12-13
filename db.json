@@ -2,35 +2,56 @@
   "wine": [
     {
       "id": 1,
-      "title": "VALDO - Valdobbiadene Prosecco Superiore D.O.C.G.Extra",
+      "title": "VALDO - Valdobbiadene Prosecco",
       "name": "Prosecco",
-      "photo": "http://cdn.shopify.com/s/files/1/0551/0705/9896/products/marca_oro_01_1200x1200.jpg?v=1666564791",
+      "photo": "https://data.callmewine.com/imgprodotto/prosecco-treviso-millesimato-extra-dry-valdo-2021_40683_zoom.jpg",
       "price": "€10,00",
       "comments": [{ "id": 1, "body": "Vino brutto" }],
       "reviews": [
-        { "id": 1, "efferv": "4", "color": "2", "olfatto": "4", "ep": "7" }
+        {
+          "rate": "3",
+          "id": 1,
+          "efferv": "4",
+          "color": "2",
+          "olfatto": "4",
+          "ep": "7"
+        }
       ]
     },
     {
       "id": 2,
-      "title": "Duca di Villamagna Riserva Villamagna D.O.C.",
+      "title": "Duca di Villamagna D.O.C.",
       "name": "Villamagna",
-      "photo": "https://www.officinadelvino.it/1517-large_default/duca-di-villamagna-riserva-doc-75-cl.jpg",
+      "photo": "https://www.mi-cant.com/wp-content/uploads/2020/03/agricosimo-montepulciano-rosso.png",
       "price": "€20,00",
       "comments": [{ "id": 2, "body": "Vino buono" }],
       "reviews": [
-        { "id": 2, "efferv": "6", "color": "6", "olfatto": "6", "ep": "5" }
+        {
+          "rate": "5",
+          "id": 2,
+          "efferv": "6",
+          "color": "6",
+          "olfatto": "6",
+          "ep": "5"
+        }
       ]
     },
     {
       "id": 3,
-      "title": "Controguerra DOC Rosso Riserva Lumen 2015",
+      "title": "Lumen - Controguerra DOC ",
       "name": "Controguerra",
       "photo": "https://mediacore.kyuubi.it/anticaenotecagiulianelli/media/img/2021/1/27/192143-large-controguerra-doc-rosso-riserva-lumen-2015-illuminati.jpg",
       "price": "€30,00",
       "comments": [{ "id": 3, "body": "Vino ottimo" }],
       "reviews": [
-        { "id": 3, "efferv": "7", "color": "8", "olfatto": "9", "ep": "8" }
+        {
+          "rate": "8",
+          "id": 3,
+          "efferv": "7",
+          "color": "8",
+          "olfatto": "9",
+          "ep": "8"
+        }
       ]
     }
   ]
